@@ -7,6 +7,7 @@ To run this app:
     * To query the database through shell, ssh into the docker image with `docker exec -it mongo-container bash`. Once inside, you can enter mongoDB shell with `mongo -u mongo_user -p mongo_pw`.
 2. Run `pip3 install -r requirements.txt` to install needed python dependencies for this app.
 3. In your main terminal, `cd` into the src directory and run `python3 app.py`. The app runs on `localhost:5000`.
+4. To run unit tests, run `pytest` in the root directory.
 
 In the app, you can either enter an ASIN in the text input and press "Search" or directly navigate to `/get/{ASIN}` to see the app in action.
 
