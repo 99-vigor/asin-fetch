@@ -26,7 +26,7 @@ Once I got the parsing working on my test set, I built the flask app around the 
 
 I didn't have enough time to write unit tests for everything, but I added as many tests as I could to the core functionality of Scrapy's parsing pipeline. The key goal with this was that Amazon (or any website I would parse) is not static; for speed and reliability I wanted hardcoded mock html responses to test on. Additionally I wanted to do as little live testing as possible before I was confident in my scraping app, as Amazon is good at detecting suspicious repeated behaviour and is IP ban-happy.
 Given some more time I would have liked to test:
-* More edge cases for scrapy's xpath parsing ()
+* More edge cases for scrapy's xpath parsing (incomplete html, more nested html, divs with varying classes applied, etc)
 * Support more amazon page layouts
 * Add repository testing with verified writes to a mock repository
 * Add integration tests
